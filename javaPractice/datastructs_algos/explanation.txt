@@ -1,0 +1,97 @@
+I'm only going over the main data structures and algorithms used for now. more practical.
+
+Actually, here's what I'll do as well. 
+I've implemented some data structures and algorithms in college courses, and I don't remember the syntax for implementation. I could figure it out again. 
+Since there are so many data structures and algorithms and they're actually not thattt hard to implement, I'd rather take notes on use-cases (and maybe notes on time complexity). 
+I will only implement the most popular data structures and algorithms just to review syntax and create a personal example for them. 
+
+Well, roadmap.sh/java summarizes the most commonly used (actually used) data structures:
+"
+Array allocates continuous memory for homogeneous data
+Linked List stores data in nodes with references
+Stack follows Last In First Out principle
+Queue follows First In First Out principle
+"
+some more (may be repeated from above quote):
+Hashmap as well/Maps
+Sets
+Lists
+'Dictionary / Hash table' (front-end?)
+'priority queue'
+
+I will implement: (in Java)
+Array, Linked List, Stack, Queue, Hashmap, Set, List
+maybe batch in the future
+
+Queues:
+I've seen queues implemented a bit at my current job. I've even implemented one (a queueable batch) and debugged another one :)
+From what I've seen, they're useful for keeping track of a long list of asynchronous processes so, if an error occurs, it can be restarted from that failed point. For example, using it in api calls will help ensure successful api calls don't have to be redone if that information is already stored as the queue executes. 
+Another way it could be useful is with a background process that schedules itself (maybe to bulk modify data) one queue at a time. 
+More real-life use-cases:
+call center, task scheduling
+
+Hashmap:
+key-value with variable size
+nullable, unordered, efficient in time and space
+can be used to represent graph data structure
+caching data in the front-end
+
+Array:
+multi-dimensional array for processing images, caching, sorting algorithms like binary search or quicksort, representing 3d objects (or more dimensions)
+
+Stack: 
+a browser's back button, undoing something, navigating a menu with multiple options
+
+Linked List: 
+'infinite scrolls in User Interfaces', playlist, more efficient than array for adding or removing data (and good for large individual objects where frequent traversal isn't as necessary), LRU cache when used sith a hashtable, gps navigation (linked list of map data), browser navigation, (trees = examples of linked lists past 1 dimension)
+
+'priority queue'
+similar to a regular queue but the order can be modified based on a priority value. Can be implemented using an array, linked list, heap data structure, or binary search tree. This can be used for implementing a task scheduler, (djikstra's algorithm for shortest node path in a graph), time-based features
+
+optional future research: 'UI code, batch job handling, parsers' dynamic programming
+	--> not sure what "UI code dynamic progamming" is. not many google results. 
+	--> looks like batch job handling can be implemented in java with spring. this is worth looking into later. 
+https://spring.io/guides/gs/batch-processing
+https://www.baeldung.com/java-ee-7-batch-processing
+batches are good for "processing payslips, calculating interest, and generating bills...list of manual tasks"
+	--> parsers: https://tomassetti.me/parsing-in-java/   ah. so translating stuff like handwriting into storable data. I've done machine learning projects with this! woowoo. Or: it could be as simple as stuff like Integer.parseInt. 
+
+more optional future research: top 'functional programming' concepts (fold, reduce, recursion, mapping, laziness, currying, etc)
+	--> fold: similar function structure can be identified to create a function that takes in an operation as a parameter. another method is used to create instances of operation-specific methods. Example: perform an operation on a loop. The instances could be sum, multiplication, or printing. etc. 
+https://medium.com/@zaid.naom/exploring-folds-a-powerful-pattern-of-functional-programming-3036974205c8
+	--> reduce: same as fold. compresses array down into single value. 
+	--> recursion: call itself. good for handling arbitrary nesting (tree). example: sum of videogames that could be a single game or a bundle of games. (or replace for and while loops in functional languages)
+	--> mapping: apply a function to stuff inside an array
+	--> laziness: (used in Haskell).
+https://medium.com/background-thread/what-is-lazy-evaluation-programming-word-of-the-day-8a6f4410053f
+evaluates only when it is absolutely necessary. makes it possible to work with infinite lists (if only part of it is used). mm. good for integrals?
+	--> currying: split up methods into having one param so method calls can be nested. I imagine logic can also be used to determine which sub-method should be used. 
+https://stackoverflow.com/questions/36314/what-is-currying
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
