@@ -3,7 +3,6 @@ I'm only going over the main data structures and algorithms used for now. more p
 Actually, here's what I'll do as well. 
 I've implemented some data structures and algorithms in college courses, and I don't remember the syntax for implementation. I could figure it out again. 
 Since there are so many data structures and algorithms and they're actually not thattt hard to implement, I'd rather take notes on use-cases (and maybe notes on time complexity). 
-I will only implement the most popular data structures and algorithms just to review syntax and create a personal example for them. 
 
 Well, roadmap.sh/java summarizes the most commonly used (actually used) data structures:
 "
@@ -18,10 +17,6 @@ Sets
 Lists
 'Dictionary / Hash table' (front-end?)
 'priority queue'
-
-I will implement: (in Java)
-Array, Linked List, Stack, Queue, Hashmap, Set, List
-maybe batch in the future
 
 Queues:
 I've seen queues implemented a bit at my current job. I've even implemented one (a queueable batch) and debugged another one :)
